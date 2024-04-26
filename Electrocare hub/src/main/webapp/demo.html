@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Block</title>
+  <style>
+    body {
+      background-image: linear-gradient(135deg, #063451 0%, #e2ebf0 100%);
+      background-image: url('./images.jpeg');
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+    }
+    header h1{
+       
+        
+        color: black;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    footer {
+      
+      box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+    }
+    footer h2{
+        color: white;
+    }
+    header img {
+      max-width: 170px; /* Adjust the width as needed */
+      
+    }
+    .service-block-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .service-block {
+      text-align: center;
+      padding: 20px;
+      border-radius: 8px;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 20px;
+      width: 280px;
+      transition: transform 0.5s ease;
+    }
+    .service-block:hover {
+      transform: translateY(-5px);
+    }
+    .service-icon img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+    .service-title {
+      font-size: 24px;
+      margin-top: 10px;
+      color: #333;
+    }
+    .service-description {
+      font-size: 18px;
+      margin-top: 10px;
+      color: #4d3d3d;
+    }
+    .service-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #274564;
+      color: #fbf6f6;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 15px;
+      transition: background-color 0.5s ease;
+    }
+    .service-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+    <header>
+      <img src="./logo1-removebg-preview.png" alt="Website Logo">
+      <h1>Features And Services</h1>
+    </header>
+    <main>
+      <div class="service-block-container">
+        <div class="service-block">
+            <div class="service-icon">
+              <img src="./warranty.jpg" alt="Service Icon">
+            </div>
+            <h3 class="service-title">Claim For Warranty</h3>
+            <p class="service-description">If the product has a warranty and is not working, then proceed with filing a warranty claim.</p>
+            <a href="#" class="service-button">Learn More</a>
+          </div>
+        <div class="service-block">
+            <div class="service-icon">
+              <img src="./guaranty.jpg" alt="Service Icon">
+            </div>
+            <h3 class="service-title">Claim For Replacement</h3>
+            <p class="service-description">If the product is completely non-functional and in a dead state, then proceed with filing a claim for replacement.</p>
+            <a href="#" class="service-button">Learn More</a>
+          </div>
+          <div class="service-block">
+            <div class="service-icon">
+              <img src="./electro.jpeg" alt="Service Icon">
+            </div>
+            <h3 class="service-title">Electronics Service</h3>
+            <p class="service-description">If you want to purchase electronic gadgets or electronic products, then opt for electronic commerce.</p>
+            <a href="#" class="service-button">Learn More</a>
+          </div>
+      </div>
+    </main>
+    <footer>
+      <h3><a href="./index.html">Back to Home</a></h3>
+      
+    </footer>
+</body>
+</html>
